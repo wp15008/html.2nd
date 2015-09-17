@@ -60,7 +60,13 @@ nav ul	{
 		padding-left: 0;
 		height: 30px;
 		background-color: #333333;
-		border-radius: 5px
+		border-radius: 5px;
+		background: -webkit-gradient(linear, left top, left bottom,from(#777777), color-stop(50%, #444444),
+			color-stop(50%, #333333), to(#555555));
+		background: -webkit-linear-gradient(#777777 0%, #444444 50%, #333333 51%, #555555 100%);
+		background: -moz-linear-gradient(#777777 0%, #444444 50%, #333333 51%, #555555 100%);
+		background: -o-linear-gradient(#777777 0%, #444444 50%, #333333 51%, #555555 100%);
+		background: -ms-linear-gradient(#777777 0%, #444444 50%, #333333 51%, #555555 100%)
 		}
 
 nav ul li	{
@@ -98,7 +104,9 @@ article header {
 				border: solid 1px #aaaaaa;
 				margin: 20px 0 10px;
 				padding: 18px;
-				border-radius: 5px
+				border-radius: 5px;
+				-webkit-box-shadow: 0px 2px 3px #cccccc;
+				box-shadow: 0 2px 3px #cccccc
 				}
 
 article header h1 {
@@ -125,11 +133,13 @@ article section {
 	padding: 18px;
 	border-radius: 5px;
 	overflow: hidden;
-	background:-webkit-gradient(linear, left top, right top, from(#ffff00),to(#ff6600));
- 	background:-webkit-linear-gradient(0deg, #ffff00 0%, #ff6600 100%);
- 	background:-moz-linear-gradient(0deg, #ffff00 0%, #ff6600 100%);
-	background:-o-linear-gradient(0deg, #ffff00 0%, #ff6600 100%);
-	background:-ms-linear-gradient(0deg, #ffff00 0%, #ff6600 100%)
+	background:-webkit-gradient(linear, left top, left bottom, from(#ffffff),to(#dfdfdf));
+ 	background:-webkit-linear-gradient(#ffffff 0%, #dfdfdf 100%);
+ 	background:-moz-linear-gradient(#ffffff 0%, #dfdfdf 100%);
+	background:-o-linear-gradient(#ffffff 0%, #dfdfdf 100%);
+	background:-ms-linear-gradient(#ffffff 0%, #dfdfdf 100%);
+	-webkit-box-shadow: 0px 2px 3px #cccccc;
+	box-shadow: 0 2px 3px #cccccc
 				}
 
 article section h1	{
@@ -216,6 +226,13 @@ article section figure {
 
 <!--[if lt IE 10]
 <style>
+nav ul {
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#777777',endColorstr='#333333');
+
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#777777',endColorstr='#333333')"
+
+		}
+
 article section{
 				filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff',endColorstr='#dfdfdf');
 
