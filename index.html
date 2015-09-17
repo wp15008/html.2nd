@@ -125,11 +125,11 @@ article section {
 	padding: 18px;
 	border-radius: 5px;
 	overflow: hidden;
-	background:-webkit-gradient(linear, left top, left bottom, from(#ffffff),to(#dfdfdf));
- 	background:-webkit-linear-gradient(#ffffff 0%, #dfdfdf 100%);
- 	background:-moz-linear-gradient(#ffffff 0%, #dfdfdf 100%);
-	background:-o-linear-gradient(#ffffff 0%, #dfdfdf 100%);
-	background:-ms-linear-gradient(#ffffff 0%, #dfdfdf 100%)
+	background:-webkit-gradient(linear, left top, right top, from(#ffff00),to(#ff6600));
+ 	background:-webkit-linear-gradient(0deg, #ffffff 0%, #dfdfdf 100%);
+ 	background:-moz-linear-gradient(0deg, #ffffff 0%, #dfdfdf 100%);
+	background:-o-linear-gradient(0deg, #ffffff 0%, #dfdfdf 100%);
+	background:-ms-linear-gradient(0deg, #ffffff 0%, #dfdfdf 100%)
 				}
 
 article section h1	{
@@ -214,6 +214,15 @@ article section figure {
 
 <![endif]-->
 
+<!--[if lt IE 10]
+<style>
+article section{
+				filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff',endColorstr='#dfdfdf');
+
+				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff,endColorstr='#dfdfdf')"
+}
+</style>
+<![endif]-->
 
 </head>
 <body>
