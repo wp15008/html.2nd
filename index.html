@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>森の工房について</title>
 
+
 <meta name="viewport" content="width=device-width">
 
 
@@ -432,9 +433,25 @@ article section figure {margin-left:0}
 
 <![endif]-->
 
+<script>
+function myimage() {
+	var canvas = document.getElementById('cicle');
+	if(canvas.getContext){
+	var ctx = canvas.getContext('2d');
+
+	ctx.arc(14,14,14,0,Math.PI*2,true);
+	ctx.fillStyle = "#" + Math.floor(Math.random()*256*256*256).toString(16);
+	ctx.fill();
+
+}
+
+}
+</script>
+
+
 
 </head>
-<body>
+<body onload="myimage();">
 
 
 <!-- コンテナ -->
@@ -442,7 +459,9 @@ article section figure {margin-left:0}
 
 <!-- ヘッダー -->
 <header id="pageheader">
-<h1>Green Leaf</h1>
+<h1>
+<canvas id="cicle" width="28" height="28"></canvas>
+Green Leaf</h1>
 <h2>生活を楽しくする情報をもっと身近にお届けします</h2>
 
 
